@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+div.gallery {
+    border: 1px solid #ccc;
+
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+	BACKGROUND-COLOR:aliceblue;
+}
+
+* {
+    box-sizing: border-box;
+	background-color:black;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2 style="color:pink;font-family:verdana;text-align:center;">GLOBEINC STAFF BENEFITS </h2><br><br>
+
+<h3 style="color:white;TEXT-ALIGN:auto;"></h3>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_fjords.jpg">
+      <img src="img/permit.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Legal permit obtained from OISC UK.</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img/oyester.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Fare-Free travel across UK.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img/jsa.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">JSA provision to the overseas staff.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img/gift card.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">GIFT CARD benefit of &pound;4200 every year.</div>
+  </div>
+</div>
+
+<!--<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p></p>
+</div>-->
+
+<!--HERE WE HAVE USED THE CURSOR ON IMAGE AND IT ENLARGES IN ANOTHER FRAME-->
+<style>
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>Dropdown Image</h2>
+<p>Move the mouse over the image below to open the dropdown content.</p>
+
+<div class="dropdown">
+  <img src="img/card2.jpg" alt="negro" width="60" height="50">
+  <div class="dropdown-content">
+    <img src="img/card2.jpg" alt="negro" width="200" height="100">
+    <div class="desc">GIMBSC-IC006</div>
+  </div>
+</div>
+<h3 style="color:pink;TEXT-ALIGN:auto;">Overseas employee: Ms Srikrithi Bhat (GIMBSC-IC006)</h3>
+
+</body>
+</html>
